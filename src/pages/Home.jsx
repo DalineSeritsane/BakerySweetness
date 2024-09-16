@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel, Container, Row, Col, Button } from "react-bootstrap";
 import Navbar from '../componets/NavBar';
 import Footer from '../componets/Footer';
-import Slide1 from '../Images/slide1.jpg';
+import Slide1 from '../Images/slide1.png';
 import Slide2 from '../Images/slide2.jpg';
 
 function Home() {
