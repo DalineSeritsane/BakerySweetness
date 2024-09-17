@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
-import Menu from './pages/MenuPage';
+import MenuPage from './pages/MenuPage';
 
 function App() {
   return (
@@ -15,6 +15,6 @@ function App() {
     </Routes>
     </BrowserRouter>
   );  
-}
+};
 
 export default App;

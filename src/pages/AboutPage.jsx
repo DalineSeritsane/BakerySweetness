@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../componets/NavBar';
+import NavBar from '../compents/NavBar';
 import Footer from '../componets/Footer';
 import cinnamonswirl from '../Images/cinnamon-swirl-bread.jpg';
 import oreopots from '../Images/oreo-pots.jpg';
