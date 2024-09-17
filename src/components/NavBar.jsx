@@ -26,7 +26,7 @@ function NavBar() {
                 </div>
                 <div className=" d-none d-lg-flex">
                     <div className="flex-shrink-0 btn-lg-square border border-light rounded-circle">
-                        <i className="fa fa-phone text-white" />
+                        <i className="fa fa-phone text-black" />
                     </div>
                 </div>
                 <div className="ps-3">

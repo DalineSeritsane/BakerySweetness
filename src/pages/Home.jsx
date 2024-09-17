@@ -1,11 +1,12 @@
 import React from 'react';
 import { Carousel, Container, Row, Col, Button } from "react-bootstrap";
-import Navbar from '../compents/NavBar';
-import Footer from '../compents/Footer';
+import Navbar from '../components/NavBar';
 import Slide1 from '../Images/slide1.png';
-import Slide2 from '../Images/slide2.jpg';
+import Slide6 from '../Images/slide6.jpg';
 import fruitcake from '../Images/fruit-cake.jpg';
 import cheesebread from '../Images/Cheese-bread.jpg';
+import Footer from '../components/Footer';
+
 
 function Home() {
     return (
@@ -16,14 +17,13 @@ function Home() {
             <Container fluid className="p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
                 <Carousel>
                     <Carousel.Item>
-                        <img className="d-block w-100" src={Slide1} alt="Slide 1" />
+                        <img className="d-block w-97" src={Slide1} alt="Slide 1" />
                         <Carousel.Caption className="d-md-block">
                             <Container>
                                 <Row className="justify-content-center">
                                     <Col lg={8}>
-                                        <p className="text-primary text-uppercase fw-bold mb-2">Sweetness For Your Soul</p>
-                                        <h1 className="display-1 text-light mb-4 animated slideInDown">Passionate about our Desserts</h1>
-                                        <p className="text-light fs-5 mb-4 pb-3">
+                                        <h1 className="display-1 text-dark mb-4 animated slideInDown">Passionate about our Desserts</h1>
+                                        <p className="text-dark fs-5 mb-4 pb-3">
                                             Experience the warmth and aroma of freshly baked bread, pastries, and cakes made with love and the finest ingredients. Indulge in our delightful treats that bring joy to every bite!
                                         </p>
                                         <Button href="/" className="btn btn-primary btn-outline-warning rounded-pill py-3 px-5">
@@ -36,14 +36,13 @@ function Home() {
                     </Carousel.Item>
 
                     <Carousel.Item>
-                        <img className="d-block w-100" src={Slide2} alt="Slide 2" />
+                        <img className="d-block w-98" src={Slide6} alt="Slide 6" />
                         <Carousel.Caption className="d-md-block">
                             <Container>
                                 <Row className="justify-content-center">
                                     <Col lg={8}>
-                                        <p className="text-primary text-uppercase fw-bold mb-2">Sweetness For Your Soul</p>
-                                        <h1 className="display-1 text-light mb-4 animated slideInDown">Passionate about our Desserts</h1>
-                                        <p className="text-light fs-5 mb-4 pb-3">
+                                        <h1 className="display-1 text-dark mb-4 animated slideInDown">Passionate about our Desserts</h1>
+                                        <p className="text-dark fs-5 mb-4 pb-3">
                                             Experience the warmth and aroma of freshly baked bread, pastries, and cakes made with love and the finest ingredients. Indulge in our delightful treats that bring joy to every bite!
                                         </p>
                                         <Button href="/" className="btn btn-primary btn-outline-warning rounded-pill py-3 px-5">

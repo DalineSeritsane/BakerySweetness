@@ -1,10 +1,9 @@
 import React from 'react';
-import NavBar from '../compents/NavBar';
-import Footer from '../compents/Footer';
+import NavBar from '../components/NavBar';
 import garlicbread from '../Images/garlic-bread-.jpg';
 import choccake from '../Images/choc-cake.jpg';
 import summerdessert from '../Images/summer-desserts.jpg';
-
+import Footer from '../components/Footer';
 
 function MenuPage() {
     return(
