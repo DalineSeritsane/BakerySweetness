@@ -1,0 +1,46 @@
+/* Navbar Custom Styles */
+
+/* Brand Styling */
+.navbar-brand h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand h1:hover {
+    color: #ff9900; /* Change to desired hover color */
+  }
+  
+  /* Nav Links Styling */
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    color: #333;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: #ff9900; /* Active and hover color */
+  }
+  
+  /* Contact Information Styling */
+  .navbar .text-end {
+    font-size: 0.875rem;
+  }
+  
+  .navbar .text-primary {
+    color: #ff9900 !important; /* Customize to match your theme */
+  }
+  
+  .navbar .fa-phone-alt {
+    font-size: 1.25rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .navbar .d-flex {
+      margin-top: 1rem;
+    }
+  }
+  

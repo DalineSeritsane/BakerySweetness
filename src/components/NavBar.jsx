@@ -1,44 +1,81 @@
-import React from 'react';
-import {Link } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { FaPhoneAlt } from "react-icons/fa"; // Using react-icons for better icon management
+import Logo from '../Images/logo.jpg';
+import '../styles/NavBar.css';
 
 function NavBar() {
-    return(
-        <>
-        <nav className="navbar navbar-expand-ig navbar-warning fixed-top py-lg-0 px-lg-5 wow fadeIn"
-        data-wow-delay="0.1s">
-            <a href="index.html" className="navbar-brand ms-4 ms-lg-0">
-                <h1 className="text-black m-0">SweetBakery</h1>
-            </a>
-            <button type="button" className="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span className="navbar-toggler-icon" />
-            </button>
-            <div className="collapse navbar-collapse" id="navbarCollapse">
-                <div className="navbar-nav mx-auto p-4 p-lg-0 text-black">
-                    <il className="nav-item nav-link active">
-                        <Link to="/">Home</Link>
-                    </il>
-                    <il className="nav-item nav-link">
-                        <Link to="/about">About</Link>
-                    </il>
-                    <il className="nav-item nav-link">
-                        <Link to="/menu">Products</Link>
-                    </il>
-                </div>
-                <div className=" d-none d-lg-flex">
-                    <div className="flex-shrink-0 btn-lg-square border border-light rounded-circle">
-                        <i className="fa fa-phone text-black" />
-                    </div>
-                </div>
-                <div className="ps-3">
-                    <small className="text-black mb-0">Call Us</small>
-                    <p className="text-light fs-5 mb-0">+016 852 5963</p>
-                </div>
+  return (
+    <nav
+      className="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
+      aria-label="Main Navigation"
+    >
+      <div className="container">
+        {/* Brand */}
+        <NavLink className="navbar-brand d-flex align-items-center" to="/">
+          {/* You can replace the text with an image logo if preferred */}
+          <h1 className="mb-0 text-primary">SweetBakery</h1>
+          <img src={Logo} alt="Logo" height="40" />
+        </NavLink>
+
+        {/* Toggler/collapsibe Button */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Navbar Links */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                className="nav-link"
+                activeClassName="active"
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/about"
+                className="nav-link"
+                activeClassName="active"
+              >
+                About
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/menu"
+                className="nav-link"
+                activeClassName="active"
+              >
+                Products
+              </NavLink>
+            </li>
+          </ul>
+
+          {/* Contact Information */}
+          <div className="d-flex align-items-center">
+            <FaPhoneAlt className="me-2 text-primary" />
+            <div className="text-end">
+              <small className="text-muted">Call Us</small>
+              <p className="mb-0 text-primary">+016 852 5963</p>
             </div>
-            
-        </nav>
-        
-        </>
-    );
-};
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+}
 
 export default NavBar;

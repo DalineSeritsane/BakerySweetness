@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import garlicbread from '../Images/garlic-bread-.jpg';
 import choccake from '../Images/choc-cake.jpg';
 import summerdessert from '../Images/summer-desserts.jpg';
@@ -8,7 +7,7 @@ import Footer from '../components/Footer';
 function MenuPage() {
     return(
         <>
-        <NavBar />
+        
 
         <div className="container-xxl bg-light my-6 py-6 pt-0">
             <div className="container">
@@ -45,7 +44,7 @@ function MenuPage() {
                                 </div>
                                 <h3 className="mb-3">Cakes</h3>
                                 <span>
-                                    Beautiful decorated cakes freashly made with creative professionals, which can be customzimed in your liking. Soft cakes with a mouthwatering taste and rich ingredients.
+                                    Beautiful decorated cakes freashly made with creative professionals, which can be customzimed in your liking.
                                 </span>
                             </div>
                             <div className="position-relative mt-auto">
@@ -76,6 +75,9 @@ function MenuPage() {
                                 </a>
                             </div>
                         </div>
+                        <a href="/" className="btn btn-primary btn-outline-warning rounded-pill py-3 px-5">
+                                Read More
+                            </a>
                     </div>
                 </div>
             </div>

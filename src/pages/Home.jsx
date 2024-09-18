@@ -36,7 +36,7 @@ function Home() {
                     </Carousel.Item>
 
                     <Carousel.Item>
-                        <img className="d-block w-98" src={Slide6} alt="Slide 6" />
+                        <img className="d-block w-100" src={Slide6} alt="Slide 6" />
                         <Carousel.Caption className="d-md-block">
                             <Container>
                                 <Row className="justify-content-center">
@@ -155,22 +155,6 @@ function Home() {
                 </div>
             </div>
             {/* End Service */}
-
-            <div className="bg-warning text-light rounded-top p-5 my-6 mb-0 wow fadeInUp" data-wow-delay="0.1s">
-                <div className="row align-items-center">
-                    <div className="col-md-6">
-                        <h1 className="display-4 text-light mb-0">Subscribe Our Newsletter</h1>
-                    </div>
-                    <div className="col-md-6 text-md-end">
-                        <div className="position-relative">
-                            <input className="form-control bg-transparent border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
-                            <button type="button" className="btn btn-warning py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">
-                                Sign Up
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <Footer />
 

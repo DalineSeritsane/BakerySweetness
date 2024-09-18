@@ -1,0 +1,35 @@
+.about-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.fadeIn {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-twice .img-fluid {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-content h1 {
+        font-size: 1.75rem;
+    }
+}
