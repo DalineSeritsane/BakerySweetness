@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/AboutPage.css';
-import NavBar from '../components/NavBar'; 
 import cinnamonswirl from '../Images/cinnamon-swirl-bread.jpg';
 import oreopots from '../Images/oreo-pots.jpg';
 import Footer from '../components/Footer';
